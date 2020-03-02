@@ -1,2 +1,2 @@
-eventBrite=new eventBrite()
+eventBrite=new EventBrite()
 ui=new Interfaz()

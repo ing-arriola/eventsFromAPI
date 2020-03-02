@@ -21,4 +21,21 @@ class Interfaz{
                 });
             })
     }
+    showMessage(msg,classes){
+        const div=document.createElement('div')
+        div.classList=classes
+        div.appendChild(document.createTextNode(msg))
+        let searcher=document.querySelector('#buscador')
+        searcher.appendChild(div)
+        setTimeout(() => {
+            this.cleanMessage()
+        }, 3000);
+    }
+
+    cleanMessage(){
+        let someAlert=document.querySelector('.alert')
+        if (someAlert) {
+            someAlert.remove()
+        }
+    }
 }

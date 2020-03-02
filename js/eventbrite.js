@@ -1,6 +1,6 @@
 class EventBrite{
     constructor(){
-        this.token='PUTAPI'
+        this.token='put-api'
         this.ordenar='date'
     }
     async getCategories(){

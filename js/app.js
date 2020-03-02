@@ -11,5 +11,7 @@ document.getElementById('buscarBtn').addEventListener('click',(e)=>{
         
     } else {
         //throw an error
+        console.log('no data')
+        ui.showMessage('mensaje','alert alert-danger mt-4')
     }
 })
